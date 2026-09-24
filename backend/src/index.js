@@ -5,7 +5,7 @@ const { Server } = require("socket.io");
 const dotenv = require("dotenv");
 dotenv.config();
 console.log("MONGO_URI =", process.env.MONGO_URI);
-const RoomManager = require("./rooms/RoomManager");
+const RoomManager = require("./rooms/roomManager.js");
 const GameManager = require("./game/GameManger.js");
 const registerSocketHandlers = require("./socket/socketHandlers");
  
